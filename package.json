@@ -1,6 +1,6 @@
 {
   "name": "cssclass",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Utility to build css class/className to apply to elements",
   "main": "./dist/index.js",
   "types": "./dist/types.d.ts",
