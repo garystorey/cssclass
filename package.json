@@ -24,7 +24,9 @@
   "keywords": [
     "css",
     "classname",
-    "classes"
+    "classes",
+    "classlist",
+    "combine"
   ],
   "author": "Gary Storey <garystorey655@gmail.com>",
   "license": "MIT",
