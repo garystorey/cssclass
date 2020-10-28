@@ -2,9 +2,27 @@
 
 A small utility to combine css classes written in TypeScript.
 
-## Example
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Size](https://img.shields.io/bundlephobia/min/@garystorey/cssclass)
+![License](https://img.shields.io/npm/l/@garystorey/cssclass)
+![Leywords](https://img.shields.io/github/package-json/keywords/garystorey/cssclass)
+
+## Installation
+
+You can install either with `npm` or `yarn`:
+
+```
+npm install @garystorey/cssclass
+
+yarn add @garystorey/cssclass
+```
+
+## Usage
 
 ```js
+import cssclass from '@garystorey/cssclass';
+// Named exports are also supported
+// import {cssclass} from '@garystorey/cssclass';
 
 const value = 1;
 const classes = cssclass({
@@ -17,5 +35,5 @@ console.log(classes);
 
 ```
 
-You can see it in action [in this CodeSandbox](https://codesandbox.io/s/cssclass-example-w1og5),
+You can see it in action [in this CodeSandbox](https://codesandbox.io/s/cssclass-example-w1og5).
 
