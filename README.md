@@ -5,6 +5,7 @@ A small utility to combine css classes written in TypeScript.
 ![Version](https://img.shields.io/github/package-json/v/garystorey/cssclass)
 ![Size](https://img.shields.io/bundlephobia/min/@garystorey/cssclass)
 ![License](https://img.shields.io/npm/l/@garystorey/cssclass)
+
 ![Leywords](https://img.shields.io/github/package-json/keywords/garystorey/cssclass)
 
 ## Installation
