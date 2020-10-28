@@ -1,6 +1,6 @@
 # cssclass
 
-A small utility to combine css classes written in TypeScript.
+A small dependency-free utility to combine css classes written in TypeScript.
 
 ![Version](https://img.shields.io/github/package-json/v/garystorey/cssclass)
 ![Size](https://img.shields.io/bundlephobia/min/@garystorey/cssclass)
