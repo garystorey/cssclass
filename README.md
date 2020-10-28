@@ -20,10 +20,11 @@ yarn add @garystorey/cssclass
 
 ## Usage
 
+Example in JavaScript:
+
 ```js
+
 import cssclass from '@garystorey/cssclass';
-// Named exports are also supported
-// import {cssclass} from '@garystorey/cssclass';
 
 const value = 1;
 const classes = cssclass({
@@ -36,5 +37,22 @@ console.log(classes);
 
 ```
 
+Since `cssclass` is written in TypeScript, it includes its own types.
+
+```ts
+import {cssclass,CSSClassObject} from '@garystorey/cssclass';
+
+const classObject: CSSClassObject = {
+    'default' : true,
+    'notadded' : (value === 0),
+    'added' : (value === 1)
+};
+
+const value: number = 1;
+const classes = cssclass(cssObject);
+console.log(classes);
+// "default added"
+
+```
 You can see it in action [in this CodeSandbox](https://codesandbox.io/s/cssclass-example-w1og5).
 
