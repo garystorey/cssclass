@@ -49,7 +49,7 @@ const classObject: CSSClassObject = {
 };
 
 const value: number = 1;
-const classes = cssclass(cssObject);
+const classes = cssclass(classObject);
 console.log(classes);
 // "default added"
 
