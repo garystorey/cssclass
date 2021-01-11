@@ -27,8 +27,7 @@ Example in JavaScript:
 import cssclass from '@garystorey/cssclass';
 
 const value = 1;
-const classes = cssclass({
-    'default' : true,
+const classes = cssclass(`default`,{
     'notadded' : (value === 0),
     'added' : (value === 1)
 });
@@ -43,16 +42,15 @@ Since `cssclass` is written in TypeScript, it includes its own types.
 import {cssclass,CSSClassObject} from '@garystorey/cssclass';
 
 const classObject: CSSClassObject = {
-    'default' : true,
     'notadded' : (value === 0),
     'added' : (value === 1)
 };
 
 const value: number = 1;
-const classes = cssclass(classObject);
+const classes = cssclass('default',classObject);
 console.log(classes);
 // "default added"
 
 ```
-You can see it in action [in this CodeSandbox](https://codesandbox.io/s/cssclass-example-w1og5).
 
+You can see it in action [in this CodeSandbox](https://codesandbox.io/s/cssclass-example-w1og5).
