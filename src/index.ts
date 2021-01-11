@@ -9,7 +9,7 @@ const reject = (obj: CSSClassObject) => {
     .join(` `);
 };
 
-export const cssclass = (...values: Array<string | CSSClassObject>) => {
+export const cssclass = (...values: Array<string | CSSClassObject>): string => {
   const classNames: string[] = [];
   values.forEach((value: string | ClassNamesObject) => {
     if (typeof value === 'string') {
