@@ -1,6 +1,6 @@
 {
   "name": "@garystorey/cssclass",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Utility to build css class/className to apply to elements",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
