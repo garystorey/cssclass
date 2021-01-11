@@ -1,5 +1,5 @@
 export interface CSSClassObject {
-  [id: string]: boolean;
+  [key: string]: boolean;
 }
 
 const reject = (obj: CSSClassObject) => {
@@ -11,7 +11,7 @@ const reject = (obj: CSSClassObject) => {
 
 export const cssclass = (...values: Array<string | CSSClassObject>): string => {
   const classNames: string[] = [];
-  values.forEach((value: string | ClassNamesObject) => {
+  values.forEach((value: string | CSSClassObject) => {
     if (typeof value === 'string') {
       if (value.trim().length > 0) {
         classNames.push(value);
@@ -27,7 +27,3 @@ export const cssclass = (...values: Array<string | CSSClassObject>): string => {
 };
 
 export default cssclass;
-
-export interface ClassNamesObject {
-  [key: string]: boolean;
-}
