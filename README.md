@@ -52,3 +52,5 @@ console.log(classes);
 // "default added"
 
 ```
+
+You can see it in action [on this CodeSandboc](https://codesandbox.io/s/cssclass-example-w1og5?file=/src/styles.css).
