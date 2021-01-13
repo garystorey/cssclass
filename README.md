@@ -12,7 +12,7 @@ A small dependency-free utility to combine css classes written in TypeScript.
 
 You can install either with `npm` or `yarn`:
 
-```
+```js
 npm install @garystorey/cssclass
 
 yarn add @garystorey/cssclass
@@ -52,5 +52,3 @@ console.log(classes);
 // "default added"
 
 ```
-
-You can see it in action [in this CodeSandbox](https://codesandbox.io/s/cssclass-example-w1og5).

@@ -15,11 +15,12 @@ describe('CSSClass', () => {
   });
 
   it('should add strings and objects as classes', () => {
-    expect(
-      cssclass('default', {
-        notadded: false,
-        added: true,
-      }),
-    ).toBe('default added');
+    const result = cssclass('default', {
+      notadded: false,
+      added: true,
+    });
+
+    expect(result).toBe('default added');
+    expect(result).not.toContain('notadded');
   });
 });
