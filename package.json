@@ -29,8 +29,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/seanghay/ts-package-rollup.git"
+    "url": "git+https://github.com/garystorey/cssclass.git"
   },
+  "homepage": "https://github.com/garystorey/cssclass#readme",
   "keywords": [
     "rollup",
     "vitest",
