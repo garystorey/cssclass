@@ -1,17 +1,17 @@
 {
-  "name": "ts-package-rollup",
-  "version": "1.2.1",
-  "description": "A rollup template for building JavaScript library.",
-  "main": "./dist/main.cjs",
-  "module": "./dist/main.mjs",
+  "name": "cssclass",
+  "version": "1.2.0",
+  "description": "A small dependency free utiltiy to build css classes",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "exports": {
     ".": {
-      "import": "./dist/main.mjs",
-      "require": "./dist/main.cjs",
-      "types": "./dist/main.d.ts"
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
     }
   },
-  "types": "./dist/main.d.ts",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "prepublishOnly": "rollup -c",
     "build": "rollup -c",
@@ -37,13 +37,8 @@
     "typescript",
     "jest"
   ],
-  "author": "Seanghay Yath <seanghay.dev@gmail.com>",
+  "author": "Gary Storey <garystorey655@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/seanghay/ts-package-rollup/issues"
-  },
-  "homepage": "https://github.com/seanghay/ts-package-rollup#readme",
-  "packageManager": "pnpm@6.32.10",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.0",
     "@rollup/plugin-json": "^4.1.0",
