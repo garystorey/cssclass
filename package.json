@@ -31,6 +31,9 @@
     "type": "git",
     "url": "git+https://github.com/garystorey/cssclass.git"
   },
+  "bugs": {
+    "url": "https://github.com/owner/project/issues"
+  },
   "homepage": "https://github.com/garystorey/cssclass#readme.md",
   "keywords": [
     "rollup",
@@ -38,7 +41,11 @@
     "typescript",
     "jest"
   ],
-  "author": "Gary Storey <garystorey655@gmail.com>",
+  "author": {
+    "name": "Gary Storey",
+    "email": "garystorey655@gmail.com",
+    "url": "https://garystorey.com/"
+  },
   "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.0",
