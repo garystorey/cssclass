@@ -31,7 +31,7 @@
     "type": "git",
     "url": "git+https://github.com/garystorey/cssclass.git"
   },
-  "homepage": "https://github.com/garystorey/cssclass#readme",
+  "homepage": "https://github.com/garystorey/cssclass#readme.md",
   "keywords": [
     "rollup",
     "vitest",
