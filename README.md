@@ -53,4 +53,4 @@ console.log(classes);
 
 ```
 
-You can see it in action [on this CodeSandbox](https://codesandbox.io/s/cssclass-example-w1og5?file=/src/styles.css).
+You can see it in action [on this CodeSandbox](https://codesandbox.io/s/cssclass-example-w1og5).
