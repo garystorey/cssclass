@@ -25,5 +25,3 @@ export const cssclass = (...values: Array<string | CSSClassObject>): string => {
   });
   return classNames.join(' ');
 };
-
-export default cssclass;

@@ -1,15 +1,94 @@
 {
-    "parser": "@typescript-eslint/parser",
-    "extends": [
-      "plugin:@typescript-eslint/recommended",
-      "prettier/@typescript-eslint",
-      "plugin:prettier/recommended"
-    ],
-    "parserOptions": {
+  "env": {
+      "browser": true,
+      "es6": true,
+      "jest": true,
+      "commonjs": true,
+      "node": true
+  },
+  "globals": {
+      "Atomics": false,
+      "SharedArrayBuffer": false
+  },
+  "parserOptions": {
+      "ecmaFeatures": {
+          "jsx": true
+      },
       "ecmaVersion": 2018,
       "sourceType": "module"
-    },
-    "rules": {
-      "@typescript-eslint/array-type": 0
-    }
+  },
+
+  "plugins": [
+      "jest",
+      "@typescript-eslint",
+      "prettier",
+      "testing-library",
+      "unused-imports"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+      "plugin:@typescript-eslint/recommended",
+      "plugin:import/typescript",
+      "plugin:jest/recommended",
+      "prettier",
+      "plugin:prettier/recommended"
+  ],
+  "rules": {
+      "import/extensions": [
+          "error",
+          "ignorePackages",
+          {
+              "js": "never",
+              "jsx": "never",
+              "ts": "never",
+              "tsx": "never"
+          }
+      ],
+      "import/no-default-export": "off", //TODO will be changed to "error" latter
+      "import/no-extraneous-dependencies": [
+          "error",
+          {
+              "devDependencies": [
+                  "**/*.ts",
+                  "**/*.stories.ts",
+                  "**/*.stories.tsx",
+                  "**/*.spec.ts",
+                  "**/*.spec.tsx"
+              ]
+          }
+      ],
+      "import/prefer-default-export": "off",
+      "jest/no-disabled-tests": "warn",
+      "jest/no-focused-tests": "error",
+      "jest/no-identical-title": "error",
+      "jest/prefer-to-have-length": "warn",
+      "jest/valid-expect": "error",
+      "no-nested-ternary": "off",
+      "no-plusplus": "off",
+      "no-undef": "off",
+      "@typescript-eslint/ban-ts-ignore": "off",
+      "@typescript-eslint/explicit-function-return-type": "off",
+      "@typescript-eslint/interface-name-prefix": "off",
+      "@typescript-eslint/no-empty-function": "warn",
+      "@typescript-eslint/no-explicit-any": "error",
+      "@typescript-eslint/no-non-null-assertion": "off",
+      "@typescript-eslint/no-unused-vars": "warn",
+      "unused-imports/no-unused-imports-ts": 2,
+      "testing-library/no-node-access": "off", // snapshots use "container"
+      "no-use-before-define": "off"
+  },
+
+  "overrides": [
+      {
+          "files": ["*.spec.tsx"],
+          "rules": {
+              "@typescript-eslint/no-empty-function": "off"
+          }
+      }
+  ],
+  "settings": {
+      "react": {
+          "version": "detect"
+      }
   }
+}
