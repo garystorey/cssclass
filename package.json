@@ -21,7 +21,7 @@
     "push": "npm run test-hook && npm run ci-eslint && npm run ci-stylelint && npm run ci-pretty && npm run build",
     "ci-pretty": "npx prettier src --write --loglevel error",
     "test": "jest src --watch -u",
-    "test-hook": "jest src -u"
+    "ci-hook": "jest src -u"
   },
   "repository": {
     "type": "git",
