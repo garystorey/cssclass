@@ -1,5 +1,5 @@
 {
-  "name": "cssclass",
+  "name": "@garystorey/cssclass",
   "version": "1.2.1",
   "description": "A small dependency-free utility to combine css classes written in TypeScript.",
   "main": "./dist/index.cjs",
