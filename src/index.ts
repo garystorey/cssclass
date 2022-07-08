@@ -1,27 +1,27 @@
 export interface CSSClassObject {
-  [key: string]: boolean;
+  [key: string]: boolean
 }
 
 const reject = (obj: CSSClassObject) => {
   return Object.keys(obj)
     .map((i) => !!obj[i] && i)
     .filter(Boolean)
-    .join(` `);
-};
+    .join(` `)
+}
 
 export const cssclass = (...values: Array<string | CSSClassObject>): string => {
-  const classNames: string[] = [];
+  const classNames: string[] = []
   values.forEach((value: string | CSSClassObject) => {
     if (typeof value === 'string') {
       if (value.trim().length > 0) {
-        classNames.push(value);
+        classNames.push(value)
       }
     } else {
-      const mappedValue = reject(value);
+      const mappedValue = reject(value)
       if (mappedValue.trim().length > 0) {
-        classNames.push(mappedValue);
+        classNames.push(mappedValue)
       }
     }
-  });
-  return classNames.join(' ');
-};
+  })
+  return classNames.join(' ')
+}

@@ -22,7 +22,6 @@
       "jest",
       "@typescript-eslint",
       "prettier",
-      "testing-library",
       "unused-imports"
   ],
   "parser": "@typescript-eslint/parser",
@@ -34,29 +33,7 @@
       "plugin:prettier/recommended"
   ],
   "rules": {
-      "import/extensions": [
-          "error",
-          "ignorePackages",
-          {
-              "js": "never",
-              "jsx": "never",
-              "ts": "never",
-              "tsx": "never"
-          }
-      ],
       "import/no-default-export": "off", //TODO will be changed to "error" latter
-      "import/no-extraneous-dependencies": [
-          "error",
-          {
-              "devDependencies": [
-                  "**/*.ts",
-                  "**/*.stories.ts",
-                  "**/*.stories.tsx",
-                  "**/*.spec.ts",
-                  "**/*.spec.tsx"
-              ]
-          }
-      ],
       "import/prefer-default-export": "off",
       "jest/no-disabled-tests": "warn",
       "jest/no-focused-tests": "error",
@@ -72,10 +49,7 @@
       "@typescript-eslint/no-empty-function": "warn",
       "@typescript-eslint/no-explicit-any": "error",
       "@typescript-eslint/no-non-null-assertion": "off",
-      "@typescript-eslint/no-unused-vars": "warn",
-      "unused-imports/no-unused-imports-ts": 2,
-      "testing-library/no-node-access": "off", // snapshots use "container"
-      "no-use-before-define": "off"
+      "@typescript-eslint/no-unused-vars": "warn"
   },
 
   "overrides": [
