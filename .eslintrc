@@ -1,68 +1,54 @@
 {
   "env": {
-      "browser": true,
-      "es6": true,
-      "jest": true,
-      "commonjs": true,
-      "node": true
+    "browser": true,
+    "es6": true,
+    "jest": true,
+    "commonjs": true,
+    "node": true
   },
   "globals": {
-      "Atomics": false,
-      "SharedArrayBuffer": false
+    "Atomics": false,
+    "SharedArrayBuffer": false
   },
   "parserOptions": {
-      "ecmaFeatures": {
-          "jsx": true
-      },
-      "ecmaVersion": 2018,
-      "sourceType": "module"
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
   },
 
-  "plugins": [
-      "jest",
-      "@typescript-eslint",
-      "prettier",
-      "unused-imports"
-  ],
+  "plugins": ["@typescript-eslint", "prettier", "unused-imports"],
   "parser": "@typescript-eslint/parser",
   "extends": [
-      "plugin:@typescript-eslint/recommended",
-      "plugin:import/typescript",
-      "plugin:jest/recommended",
-      "prettier",
-      "plugin:prettier/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/typescript",
+    "prettier",
+    "plugin:prettier/recommended"
   ],
   "rules": {
-      "import/no-default-export": "off", //TODO will be changed to "error" latter
-      "import/prefer-default-export": "off",
-      "jest/no-disabled-tests": "warn",
-      "jest/no-focused-tests": "error",
-      "jest/no-identical-title": "error",
-      "jest/prefer-to-have-length": "warn",
-      "jest/valid-expect": "error",
-      "no-nested-ternary": "off",
-      "no-plusplus": "off",
-      "no-undef": "off",
-      "@typescript-eslint/ban-ts-ignore": "off",
-      "@typescript-eslint/explicit-function-return-type": "off",
-      "@typescript-eslint/interface-name-prefix": "off",
-      "@typescript-eslint/no-empty-function": "warn",
-      "@typescript-eslint/no-explicit-any": "error",
-      "@typescript-eslint/no-non-null-assertion": "off",
-      "@typescript-eslint/no-unused-vars": "warn"
+    "import/no-default-export": "off",
+    "import/prefer-default-export": "off",
+    "no-nested-ternary": "off",
+    "no-plusplus": "off",
+    "no-undef": "off",
+    "@typescript-eslint/interface-name-prefix": "off",
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-unused-vars": "warn"
   },
 
   "overrides": [
-      {
-          "files": ["*.spec.tsx"],
-          "rules": {
-              "@typescript-eslint/no-empty-function": "off"
-          }
+    {
+      "files": ["*.spec.tsx"],
+      "rules": {
+        "@typescript-eslint/no-empty-function": "off"
       }
+    }
   ],
   "settings": {
-      "react": {
-          "version": "detect"
-      }
+    "react": {
+      "version": "detect"
+    }
   }
 }

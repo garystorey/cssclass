@@ -1,15 +1,13 @@
 {
-    "compilerOptions": {
-        "target": "ES5",
-        "module":"esnext",
-        "declaration": true,
-        "outDir": "./dist",
-        "strict": true,
-        "moduleResolution":"node",
-        "esModuleInterop": true,
-        "emitDeclarationOnly": true,
-    },
-    "include":["./src"],
-    "exclude":["node_modules","dist","./src/__tests__"],
-    "typeRoots": ["node_modules/@types"]
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "esnext",
+    "lib": ["esnext"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "skipDefaultLibCheck": true
+  }
 }

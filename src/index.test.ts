@@ -1,9 +1,11 @@
-import { cssclass } from '../index'
+import { describe, expect, it } from 'vitest'
+import { cssclass } from './index'
 
 describe('CSSClass', () => {
   it('should add strings as classes', () => {
     expect(cssclass('default', 'added')).toBe('default added')
   })
+
   it('should add objects as classes', () => {
     const result = cssclass({
       default: true,

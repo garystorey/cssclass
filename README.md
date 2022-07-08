@@ -1,56 +1,53 @@
-# cssclass
+<img src="https://user-images.githubusercontent.com/15277233/165488604-a2f12818-d21b-4751-af5c-5791ff9facec.png">
 
-A small dependency-free utility to combine css classes written in TypeScript.
+# ts-package-rollup
 
-![Version](https://img.shields.io/github/package-json/v/garystorey/cssclass)
-![Size](https://img.shields.io/bundlephobia/min/@garystorey/cssclass)
-![License](https://img.shields.io/npm/l/@garystorey/cssclass)
+A template for building ESM & CommonJS library.
 
-![Leywords](https://img.shields.io/github/package-json/keywords/garystorey/cssclass)
+[![test](https://github.com/seanghay/ts-package-rollup/actions/workflows/ci.yml/badge.svg)](https://github.com/seanghay/ts-package-rollup/actions/workflows/ci.yml)
 
-## Installation
+## Features
 
-You can install either with `npm` or `yarn`:
+- ✅ [Rollup](https://rollupjs.org/)
+- ✅ TypeScript
+- ✅ Type declaration `.d.ts`
+- ✅ [esbuild](https://esbuild.github.io/) 
+- ✅ [Vitest](https://vitest.dev/)
+- ✅ Use GitHub Actions for publishing to npm
+- ✅ Output files are minified with source maps
+- ✅ Support for CommonJS & ESM
+- ✅ JSON Module
+- ✅ Unit tests with GitHub Actions 
+- ✅ Conventional Releases 
 
-```js
-npm install @garystorey/cssclass
+## Test
 
-yarn add @garystorey/cssclass
+Development
+
+```sh
+pnpm test
 ```
 
-## Usage
+CI
 
-Example in JavaScript:
-
-```js
-
-import cssclass from '@garystorey/cssclass';
-
-const value = 1;
-const classes = cssclass(`default`,{
-    'notadded' : (value === 0),
-    'added' : (value === 1)
-});
-console.log(classes);
-// "default added"
-
+```sh
+pnpm test:ci
 ```
 
-Since `cssclass` is written in TypeScript, it includes its own types.
+## Release
 
-```ts
-import {cssclass,CSSClassObject} from '@garystorey/cssclass';
-
-const classObject: CSSClassObject = {
-    'notadded' : (value === 0),
-    'added' : (value === 1)
-};
-
-const value: number = 1;
-const classes = cssclass('default',classObject);
-console.log(classes);
-// "default added"
-
+```sh
+pnpm release
 ```
 
-You can see it in action [on this CodeSandbox](https://codesandbox.io/s/cssclass-example-w1og5).
+> Note: `NPM_TOKEN` should be added into your repo secret to be able to publish to npm
+
+
+## Using npm as a package manager
+
+This repo is using `pnpm` as a package manager, however if you need to use `npm` you can remove `pnpm-lock.yaml` and run `npm install`
+
+
+---
+
+This package is published to https://www.npmjs.com/package/ts-package-rollup
