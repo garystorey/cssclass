@@ -1,7 +1,7 @@
 {
   "name": "cssclass",
   "version": "1.2.0",
-  "description": "A small dependency free utiltiy to build css classes",
+  "description": "A small dependency-free utility to combine css classes written in TypeScript.",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "exports": {
