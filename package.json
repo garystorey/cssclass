@@ -18,10 +18,10 @@
     "test": "vitest --watch",
     "release": "bumpp --commit --push --tag",
     "lint": "eslint --fix src",
-    "pretty": "npx prettier src --write --loglevel warn",
+    "pretty": "npx prettier src --write . --ignore-path .gitignore --loglevel warn",
     "push": "npm run ci-test && npm run ci-lint && npm run ci-pretty && npm run build",
     "ci-lint": "eslint src --ext .ts,.tsx --fix --quiet",
-    "ci-pretty": "npx prettier src --write --loglevel error",
+    "ci-pretty": "npx prettier src --write . --ignore-path .gitignore --loglevel error",
     "ci-test": "cross-env CI=true vitest --run"
   },
   "files": [

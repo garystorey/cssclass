@@ -23,34 +23,31 @@ yarn add @garystorey/cssclass
 Example in JavaScript:
 
 ```js
+import cssclass from '@garystorey/cssclass'
 
-import cssclass from '@garystorey/cssclass';
-
-const value = 1;
-const classes = cssclass(`default`,{
-    'notadded' : (value === 0),
-    'added' : (value === 1)
-});
-console.log(classes);
+const value = 1
+const classes = cssclass(`default`, {
+  notadded: value === 0,
+  added: value === 1,
+})
+console.log(classes)
 // "default added"
-
 ```
 
 Since `cssclass` is written in TypeScript, it includes its own types.
 
 ```ts
-import {cssclass,CSSClassObject} from '@garystorey/cssclass';
+import { cssclass, CSSClassObject } from '@garystorey/cssclass'
 
 const classObject: CSSClassObject = {
-    'notadded' : (value === 0),
-    'added' : (value === 1)
-};
+  notadded: value === 0,
+  added: value === 1,
+}
 
-const value: number = 1;
-const classes = cssclass('default',classObject);
-console.log(classes);
+const value: number = 1
+const classes = cssclass('default', classObject)
+console.log(classes)
 // "default added"
-
 ```
 
 You can see it in action [on this CodeSandbox](https://codesandbox.io/s/cssclass-example-w1og5).

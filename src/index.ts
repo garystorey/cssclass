@@ -1,4 +1,4 @@
-export interface CSSClassObject {
+export type CSSClassObject = {
   [key: string]: boolean
 }
 
@@ -9,7 +9,7 @@ const reject = (obj: CSSClassObject) => {
     .join(` `)
 }
 
-export const cssclass = (...values: Array<string | CSSClassObject>): string => {
+export function cssclass(...values: Array<string | CSSClassObject>): string {
   const classNames: string[] = []
   values.forEach((value: string | CSSClassObject) => {
     if (typeof value === 'string') {
